@@ -1,0 +1,41 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.cache
+
+.venv/
+venv/
+env/
+
+.ipynb_checkpoints/
+*.dsn
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+results/*.jpg        # tracking frames
+results/*.csv        # trajectory log
+results/*.txt
+results/*.mp4        # generated outputs (if any)
+
+
+!results/error_histogram.png
+!results/error_vs_frame_plot.png
+!results/measured_vs_predicted_scatter.png
+
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+!report.pdf
+
+data/*.mp4
+data/*.avi
