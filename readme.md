@@ -114,6 +114,27 @@ python src/run_tracking.py
 cd results
 python generate_plots.py
 ```
+# Reasults
+
+### 🔹 Error vs Frame Index
+This plot shows how the Kalman filter reduces prediction error over time.
+A lower pixel distance means closer agreement between prediction and true motion.
+
+<img src="results/error_vs_frame_plot.png" width="600">
+
+### 🔹 Measured (Optical Flow) vs Predicted (Kalman)
+The scatter plot compares actual motion (red) against predicted motion (blue).
+The close overlap across the path demonstrates that the constant-velocity Kalman model
+effectively anticipates forward motion despite noise in optical flow.
+
+<img src="results/measured_vs_predicted_scatter.png" width="600">
+
+### 🔹 Error Distribution
+Histogram of pixel-wise prediction error across the video.
+Most errors lie within a small range, indicating stable prediction accuracy.
+
+<img src="results/error_histogram.png" width="600">
+
 
 # Limitations
 - Single-person only (no multi-object support)
@@ -135,7 +156,3 @@ This project is released under the MIT License.
 - GitHub: https://github.com/Gaurika-Sethi
 - LinkedIn: https://www.linkedin.com/in/gaurika-sethi-53043b321
 - Email: gaurikasethi88@gmail.com
-
-## Images
-
-![This is an alt text.](/image/sample.webp "This is a sample image.")
