@@ -3,6 +3,7 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)]()  
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-red.svg)]()  
 [![Kalman Filter](https://img.shields.io/badge/Prediction-Kalman--Filter-blue.svg)]()
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
 ## Project Link  
 https://github.com/Gaurika-Sethi/Vision-Based-Object-Tracking-Motion-Prediction-for-Autonomous-Robots
