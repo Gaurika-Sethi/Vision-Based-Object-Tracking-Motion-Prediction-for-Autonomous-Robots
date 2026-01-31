@@ -1,9 +1,9 @@
 import numpy as np
 import cv2
-
 class KalmanPredictor:
-    def __init__(self):
+    def __init__(self, R_value=20.0):
         self.kf = cv2.KalmanFilter(4, 2)
+
         self.kf.transitionMatrix = np.array([
             [1, 0, 1, 0],
             [0, 1, 0, 1],
@@ -17,7 +17,7 @@ class KalmanPredictor:
         ], np.float32)
 
         self.kf.processNoiseCov = np.eye(4, dtype=np.float32) * 1e-3
-        self.kf.measurementNoiseCov = np.eye(2, dtype=np.float32) * 1e-2
+        self.kf.measurementNoiseCov = np.eye(2, dtype=np.float32) * R_value
 
         self.initialized = False
         self.pred_traj = []

@@ -13,7 +13,7 @@ video = cv2.VideoCapture("data/self_recorded_video.mp4")
 print("Loaded:", video.isOpened())
 
 flow_tracker = OpticalFlowTracker()
-kalman = KalmanPredictor()
+kalman = KalmanPredictor(R_value=50.0)
 frame_count = 0
 
 while True:
