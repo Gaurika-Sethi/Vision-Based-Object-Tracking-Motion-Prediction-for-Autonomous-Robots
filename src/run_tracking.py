@@ -9,7 +9,7 @@ from kalman_filter import KalmanPredictor
 for f in glob.glob("./results/*.jpg"):
     os.remove(f)
 
-video = cv2.VideoCapture("data/video.mp4")
+video = cv2.VideoCapture("data/self_recorded_video.mp4")
 print("Loaded:", video.isOpened())
 
 flow_tracker = OpticalFlowTracker()
